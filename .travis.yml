@@ -1,0 +1,22 @@
+---
+language: php
+php:
+- 5.3
+- 5.4
+git:
+  submodules: false
+before_script:
+- composer install
+script: phpunit ./tests
+env:
+  global:
+  - secure: ! 'P5zcKNhAtcp7JKc4cm7HZzgMmWIMAwURgwPL4BV8wNwzaY6DwwAUDhUYuBW0
+
+      1TBXzz73V9dM2p1Yl5rpOsZ7o0sIbFXU2TE0LYMXAaIjl3oQYHmaAsry8DSk
+
+      suyxF2IvlGMj1PKHRguC1Hx1b+irZyLAJwqqQ706YoVAu9erYO8='
+  - secure: ! 'ZeOejte5/bPxAhrGBjJl2Xbqher+BctwNAguqgBim9FbujfVLlB9CoFbAsNq
+
+      f3l5udqD0gHnMBvQybg/hZHrb3IZjf1q5pDYGBpdl9enm9mKkp3BlW/ryFXq
+
+      Q9JaNluwo2e6qhP87HtQngXBCKctuBO1QXKNiGjXvePfEh96dOM='
